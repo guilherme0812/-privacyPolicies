@@ -1,0 +1,110 @@
+/* Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/* Import Theme color*/
+@import url('./theme.css');
+
+/* Importar estilo de sessões*/
+@import url('./sessions.css');
+
+
+* {font-size: 1rem; font-family: 'DM Sans', sans-serif; margin: 0; padding: 0;}
+html, body {margin: 0; padding: 0;}
+
+/*Estio de sessões*/
+.container {max-width: 1200px; margin: auto; padding: 0rem 1rem;}
+
+
+/* Estilização de Texto*/
+h1, h2, h3, h4, h5 {font-weight: 400;}
+h2 {font-size: 2.5rem; line-height: 0.9;}
+h3 {font-size: 1.8rem;}
+p {font-size: 1rem;}
+
+.orange-title {color: var(--orange-tile);}
+.glay-text {color: var(--gray-text);}
+.text-bold {font-weight: 600;}
+.title {position: relative;}
+.title::before {
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 5px;
+    background-color: var(--orange-tile);
+    top: 120%;
+    left: 0%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    h1, h2, h3, h4, h5 {font-weight: 400;}
+    h2 {font-size: 3.1rem; line-height: 0.9;}
+    h3 {font-size: 2.3rem;}
+    p {font-size: 1.2rem;}
+}
+
+/*Estilo flexivel*/
+.d-flex {display: flex;}
+.flex-direction-column {flex-direction: column;}
+.j-content-center {justify-content: center;}
+.align-item-center {align-items: center;}
+
+/* Outros estilos*/
+@media only screen and (max-width: 768px) {
+    .order-1 {order: 1;}
+    .order-2 {order: 2;}
+    .min-height {min-height: 80vh;}
+}
+@media only screen and (min-width: 768px) {
+    .min-height {min-height: 100vh;}
+    .desktop-min-height {min-height: 100vh;}
+}
+
+
+/*Columns*/
+/* For mobile phones: */
+.cols {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+  
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+}

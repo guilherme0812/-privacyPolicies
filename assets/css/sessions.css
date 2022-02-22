@@ -1,0 +1,51 @@
+/*Header*/
+#main-header {
+    background-image: url('../img/wave-header.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 45%;
+}
+#header-content {gap: 7rem 0rem;}
+img#img-children-plating {
+   display: block;
+   width: 50%;
+   height: 50%;
+}
+@media only screen and (min-width: 768px) {
+    img#img-children-plating {
+        display: block;
+        width: 70%;
+        height: 70%;
+     }
+}
+
+/*Sessão de cookies*/
+#session-cookies {
+    margin-top: 4rem;
+    background-image: url('../img/wave-session-cookies.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+}
+#session-cookies-content {gap: 7rem 0rem;}
+img#img-girl-cookie {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+@media only screen and (min-width: 768px) {
+    #session-cookies {margin-top: 0;}
+    img#img-girl-cookie {
+        display: block;
+        width: 45%;
+        height: 45%;
+    }
+}
+
+section#howDoWeProtected {
+    background-image: url('../img/wave-howDoWeProtected.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+}
+#howDoWeProtected-content {gap: 7rem 0rem;}

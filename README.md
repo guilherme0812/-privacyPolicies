@@ -1,4 +1,4 @@
 # privacyPolicies
-Site institucional de politica de privacidade
+Site institucional de politicas de privacidade
 
-<img src="./img/layout.jpg" width="300px" />
+<img src="./assets/img/layout.jpg" width="300px" />

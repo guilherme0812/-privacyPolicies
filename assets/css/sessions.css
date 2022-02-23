@@ -1,3 +1,30 @@
+/* Import Theme color*/
+@import url('./theme.css');
+
+/*NAV*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 0;
+}
+nav #logo {
+    width: 120px;
+}
+nav .button-link {
+    display: block;
+    padding-right: 2.5rem;
+    background-image: url('../img/icons/arrow-up-right-from-square-solid.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 20px;
+    font-size: 1.15rem;
+    transition: .3s;
+}
+nav .button-link:hover {
+    opacity: .7;
+}
 /*Header*/
 #main-header {
     background-image: url('../img/wave-header.png');
@@ -42,6 +69,7 @@ img#img-girl-cookie {
     }
 }
 
+/*Sessão de proteção de dados*/
 section#howDoWeProtected {
     background-image: url('../img/wave-howDoWeProtected.png');
     background-repeat: no-repeat;
@@ -49,3 +77,67 @@ section#howDoWeProtected {
     background-size: contain;
 }
 #howDoWeProtected-content {gap: 7rem 0rem;}
+section#howDoWeProtected .content {
+    gap: 4rem 0rem;
+}
+section#howDoWeProtected img#img-boy-with-shield {
+    display: block;
+    width: 70%;
+    height: 70%;
+}
+
+/*Sessão de armazenamento*/
+section#howDoWeStore {
+    margin-top: 4rem;
+    background-image: url('../img/wave-sharing.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+section#howDoWeStore div#howDoWeStore-content {gap: 7rem 0;}
+section#howDoWeStore .content {
+    gap: 2rem 0rem;
+}
+section#howDoWeStore img#img-howDoWeStore {
+    display: block;
+    width: 45%;
+    height: 45%;
+}
+@media only screen and (min-width: 768px) {
+    section#howDoWeProtected {
+        margin-top: 0;
+    }
+    section#howDoWeStore img#img-howDoWeStore {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+/* FOoter */
+footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-image: url('../img/wave-footer.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 20%;
+}
+footer h4 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+    footer {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-image: url('../img/wave-footer.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+    }
+
+    footer h4 {
+        margin-bottom: 2.5rem;
+        margin-top: 0;
+    }
+}

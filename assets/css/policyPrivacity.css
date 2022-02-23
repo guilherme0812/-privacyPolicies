@@ -13,17 +13,25 @@ html, body {margin: 0; padding: 0;}
 
 /*Estio de sessões*/
 .container {max-width: 1200px; margin: auto; padding: 0rem 1rem;}
+.info-container {gap: 0rem 1.5rem;}
 
 
 /* Estilização de Texto*/
 h1, h2, h3, h4, h5 {font-weight: 400;}
 h2 {font-size: 2.5rem; line-height: 0.9;}
 h3 {font-size: 1.8rem;}
+h4 {font-size: 1.4rem;}
 p {font-size: 1rem;}
+a {text-decoration: none; color: var(--gray-text);}
 
 .orange-title {color: var(--orange-tile);}
-.glay-text {color: var(--gray-text);}
+.black-title {color: var(--title-black);}
+.gray-text {color: var(--gray-text);}
 .text-bold {font-weight: 600;}
+.font-title {font-family: 'Staatliches', cursive; color: var(--background-dark-l4);}
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
 .title {position: relative;}
 .title::before {
     content: '';
@@ -41,12 +49,15 @@ p {font-size: 1rem;}
     h2 {font-size: 3.1rem; line-height: 0.9;}
     h3 {font-size: 2.3rem;}
     p {font-size: 1.2rem;}
+    p.subParagraph {font-size: 1.05rem;}
 }
 
 /*Estilo flexivel*/
 .d-flex {display: flex;}
 .flex-direction-column {flex-direction: column;}
 .j-content-center {justify-content: center;}
+.j-content-space-around {justify-content: space-around;}
+.j-content-space-between {justify-content: space-between;}
 .align-item-center {align-items: center;}
 
 /* Outros estilos*/
@@ -60,6 +71,23 @@ p {font-size: 1rem;}
     .desktop-min-height {min-height: 100vh;}
 }
 
+/*Estilos genericos*/
+.p-1 {padding: 1%;}
+.pt-1 {padding-top: 1%;}
+.pr-1 {padding-right: 1%;}
+.pr-3 {padding-right: 3%;}
+.pb-1 {padding-bottom: 1%;}
+.pl-1 {padding-left: 5px;}
+
+.mgt-1 {margin-top: 10px}
+.mgt-2 {margin-top: 20px}
+.mgt-3 {margin-top: 30px}
+.mgb-0 {margin-bottom: 0px;}
+.mgb-1 {margin-bottom: 10px;}
+.mgb-2 {margin-bottom: 20px;}
+.mgb-3 {margin-bottom: 30px;}
+.mgl-1 {margin-left: 10px;}
+.w-100 {width: 100%;}
 
 /*Columns*/
 /* For mobile phones: */
@@ -68,8 +96,8 @@ p {font-size: 1rem;}
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    gap: 0 1%;
 }
 
 [class*="col-"] {
@@ -97,9 +125,9 @@ p {font-size: 1rem;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
+    .col-4 {width: 30.33%;}
     .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
+    .col-6 {width: 49.5%;}
     .col-7 {width: 58.33%;}
     .col-8 {width: 66.66%;}
     .col-9 {width: 75%;}
